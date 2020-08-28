@@ -5,42 +5,43 @@
 </template>
 <script>
 export default {
-  provide(){
-    return{
-      reload:this.reload
+  provide() {
+    return {
+      reload: this.reload,
     }
   },
-  data(){
-    return{
-      isRouterAlive:true
+  data() {
+    return {
+      isRouterAlive: true,
     }
   },
-  methods:{
-    reload(){
-      this.isRouterAlive=false;
-      this.$nextTick(function(){
-          this.isRouterAlive=true;
+  methods: {
+    reload() {
+      this.isRouterAlive = false
+      this.$nextTick(function () {
+        this.isRouterAlive = true
       })
-    }
-  }
+    },
+  },
 }
 </script>
 
-<style> 
+<style>
 html,
 body {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 #app {
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
-    width: 100%;
-    height: 100%;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  width: 100%;
+  height: 100%;
 }
 </style>
