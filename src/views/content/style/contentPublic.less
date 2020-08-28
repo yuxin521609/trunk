@@ -1,0 +1,32 @@
+
+.page-public{
+  .page-main{}
+  .page-main-inner{background: #fff;padding:24px;
+
+  }
+  .page-main-btns{}
+
+
+  /*修改elementUI  tab*/
+
+
+
+
+  /*修改elementUI导航*/
+  /*线的颜色*/
+  @lineColor: #e6e8ed;
+  /*字体的颜色*/
+  @txtColor: #2290e8;
+  .el-menu--horizontal{height: 41px;
+    .el-menu-item{height: 40px;line-height: 40px;font-size: 14px;font-weight: bold;color: #333;}
+    .el-menu-item.is-active{border-bottom: 2px solid #fff !important;color: @txtColor;}
+    .el-menu-item:hover{color: @txtColor;}
+  }
+  .page-menu-border{border-bottom: 1px solid @lineColor;
+    .el-menu-item{border-left: 1px solid @lineColor;border-top: 1px solid @lineColor !important;height: 41px !important;font-size: 14px;font-weight: bold;color: #333;}
+    .el-menu-item.is-active{border-bottom: 1px solid #fff !important;color: @txtColor;}
+    .el-menu-item:last-child{border-right: 1px solid @lineColor;border-top-right-radius: 4px;}
+    .el-menu-item:first-child{border-top-left-radius: 4px;}
+    .el-menu-item:hover{color: @txtColor;}
+  }
+}

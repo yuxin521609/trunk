@@ -1,0 +1,62 @@
+{
+  "name": "lss-crm",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test": "vue-cli-service build --mode test",
+    "preview": "vue-cli-service build --mode preview",
+    "synqci": "vue-cli-service build --mode synqci",
+    "fix-memory-limit": "cross-env LIMIT=3072 increase-memory-limit"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-regular": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "axios": "^0.18.0",
+    "core-js": "^2.6.5",
+    "crypto-js": "^3.1.9-1",
+    "echarts": "^4.2.1",
+    "el-cascader-multi": "^1.1.6",
+    "element-ui": "^2.10.0",
+    "file-saver": "^2.0.2",
+    "nprogress": "^0.2.0",
+    "sortablejs": "^1.9.0",
+    "vod-js-sdk-v6": "^1.2.10",
+    "vue": "^2.6.10",
+    "vue-jsonp": "^0.1.6",
+    "vue-router": "^3.0.3",
+    "vuedraggable": "^2.23.2",
+    "vuex": "^3.0.1",
+    "wangeditor": "^3.1.1",
+    "xlsx": "^0.14.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "cross-env": "^6.0.0",
+    "font-awesome": "^4.7.0",
+    "increase-memory-limit": "^1.0.7",
+    "less": "^3.10.1",
+    "less-loader": "^5.0.0",
+    "script-loader": "^0.7.2",
+    "svg-sprite-loader": "^4.1.6",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
